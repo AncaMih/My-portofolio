@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gili Air</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Comforter&family=Permanent+Marker&display=swap");
+      
+      html {background-color: rgb(165, 198, 209);}
+
+      .my-project {
+        background-color: #C9D4DD;
+        width: 50%;
+        padding: 30px 30px 30px 30px;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 1%;
+      }
+      h1,
+      h2,
+      p {
+        text-align: center;
+      }
+      h1 {
+        font-family: "Permanent Marker", cursive;
+        font-size: 70px;
+        font-weight: 100;
+        color:#496EA9;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-shadow: 3px 0px 1px black;
+      
+      }
+      h2 {
+        font-family: "Caveat", cursive;
+        font-size: 50px;
+        color: #47648F;
+        margin: 0.2em;
+        line-height: 1.5;
+      }
+      p {
+        font-family: "Caveat", cursive;
+        font-size: 25px;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        display: block;
+        text-align: left;
+      }
+
+      ul {
+        text-align: left;
+        font-family: "Caveat", cursive;
+        font-size: 25px;
+      }
+  
+      img{
+        display: block;
+        margin: 0 auto;
+        border-radius: 30%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+
+      button{
+        display: block;
+        margin: 0 auto 40px auto;
+        padding: 20px 150px 20px 150px;
+        font-size: 35px;
+        text-align: left;
+        font-family: "Permanent Marker", cursive;
+        background:#FFEBB2 ;
+        border:2px solid black;
+        box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+        border-radius: 5%;
+      }
+      button:hover{
+        cursor:pointer;
+        transition: opacity 50ms ease ease-in-out;
+        background:#496EA9;
+      }
+
+  
+      .signature{
+        font-family:"Comforter", cursive;
+        text-align: center;
+      }
+
+      span.things {
+        font-weight: bold;
+        color:#2B6C98;
+        text-decoration: underline;}
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="my-project">
+      <h1><em> Gili Air </em></h1>
+
+      <h2>Indonesia's island paradise</h2>
+      <hr />
+      <p>
+        Closest of the Gilis to Lombok, <b>Gili Air</b> blends Gili
+        T’s buzz and bustle with Meno's minimalist vibe. The white-sand beaches
+        here are arguably the best of the Gili bunch and there’s just enough
+        nightlife to keep the sociable happy. Snorkeling is good right from the
+        main strip along the east coast – a lovely sandy lane dotted with bamboo
+        bungalows and little restaurants where you can eat virtually on top of a
+        turquoise sea.
+
+      </p>
+  
+      <br>
+       <hr/>
+      <p> <span class="things"> Things to do; </span></p> 
+      <ul>
+        <li>A local cooking class Gili Air</li>
+        <li>Snorkel at the sculptures</li>
+        <li>Bike around the island</li>
+        <li>Swing at the beach</li>
+        <li>Join a yoga class</li>
+      </ul>
+       <small>
+        <a
+          href="https://www.lonelyplanet.com/indonesia/gili-air "
+          target="_blank"
+          > Read more on Lonely Planet
+        </a>
+         </small>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/599/original/gili-air-birds-eye.jpeg?1637769450"
+        alt="giliAirPhoto"
+        width="600"
+      />
+      <hr />
+       
+
+      <button> Book your holiday 🍹 </button>
+      
+      <p class="signature">
+        This page has been created by Anca Toma
+      </p>
+    
+      <script>
+        function bookYourHoliday()
+        {let name = prompt ("What is your name?");
+        let email = prompt ("What is your email address?")
+        alert(`Thank you ${name}! We will soon get in touch! Namaste!🧘🏼‍♀️`)}
+
+        let holidayButton = document.querySelector("button");
+        holidayButton.addEventListener("click",bookYourHoliday);
+      </script>
+  </body>
+  </div>
+</html>
